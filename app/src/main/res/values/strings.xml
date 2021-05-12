@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MovieCatalog</string>
+    <string name="title_activity_detail_movie">DetailMovieActivity</string>
+
+    <string name="movies">Movies</string>
+    <string name="tv_series">TV Series</string>
+    <string name="menu_series">series</string>
+
+
+    <string name="title">Title</string>
+    <string name="description">Deskripsi</string>
+    <string name="description_movser">Deskripsi Film/Series</string>
+    <string name="genre">Genre</string>
+    <string name="movie_genre">genre film</string>
+    <string name="duration">Durasi</string>
+    <string name="movie_duration">durasi film</string>
+    <string name="year">Tahun</string>
+    <string name="movie_year">tahun film</string>
+    <string name="season">Musim</string>
+    <string name="movie_season">musim film</string>
+
+</resources>

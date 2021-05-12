@@ -1,0 +1,94 @@
+{
+    "movieList" : [
+        {
+            "movieId" : "001",
+            "title" : "A Star Is Born",
+            "description":"Seorang bintang musik country yang karirnya mulai memudar, Jackson Maine (Bradley Cooper) menemukan sebuah talenta yang sangat berbakat di dalam diri dari seorang musisi muda bernama Ally (Lady Gaga). Maine berhasil mengorbitkan Ally menjadi seorang bintang muda yang menjanjikan. Namun keduanya terlibat hubungan yang lebih jauh dari sekedar mentor dan anak didik. Seiring dengan meroketnya karir dari Ally dan dirinya, Maine mengalami dilema mengenai masalah ini.",
+            "genre":"Drama, Percintaan, Musik",
+            "year" :"2018",
+            "duration":"2h 16m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg"
+        },
+        {
+            "movieId":"002",
+            "title":"Alita: Battle Angel",
+            "description":"Ketika Alita terbangun tanpa ingatan tentang siapa dia di dunia masa depan yang tidak dia kenal, dia ditangkap oleh Ido, seorang dokter yang penuh kasih yang menyadari bahwa di suatu tempat dalam cangkang cyborg yang ditinggalkan ini adalah hati dan jiwa seorang wanita muda dengan luar biasa. lalu.",
+            "genre":"Aksi, Cerita Fiksi, Petualangan",
+            "year":"2019",
+            "duration":"2h 2m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg"
+        },
+        {
+            "movieId":"003",
+            "title":"Aquaman",
+            "description":"Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people and then the surface world. Standing in his way is Arthur Curry, Orm's half-human, half-Atlantean brother and true heir to the throne.",
+            "genre":"Aksi, Petualangan, Fantasi",
+            "year":"2018",
+            "duration":"2h 23m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xLPffWMhMj1l50ND3KchMjYoKmE.jpg"
+        },
+        {
+            "movieId":"004",
+            "title":"Bohemian Rhapsody ",
+            "description":"Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.",
+            "genre":"Musik, Drama, Sejarah",
+            "year":"2018",
+            "duration":"2h 15m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg"
+        },
+        {
+            "movieId":"005",
+            "title":"Fast & Furious Presents: Hobbs & Shaw",
+            "description":"Hobbs & Shaw (2019) cinema film baru barat yang sangat seru Ini bercerita Luke Hobbs (Dwayne Johnson) terpaksa membentuk aliansi yang mustahil dengan Deckard Shaw (Jason Statham). Keduanya terpaksa bersatu membantu Hattie Shaw (Vanessa Kirby) untuk memburu senjata virus berbahaya dan Brixton (Idris Elba). Brixton adalah penjahat jenis baru yang berhasil mengubah dirinya menjadi manusia super. Keberadaanya menjadi ancaman bagi umat manusia.",
+            "genre":"Aksi, Petualangan, Komedi",
+            "year":"2019",
+            "duration":"2h 17m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qRyy2UmjC5ur9bDi3kpNNRCc5nc.jpg"
+        },
+        {
+            "movieId":"006",
+            "title":"Mulan",
+            "description":"When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential.",
+            "genre":"Petualangan, Fantasi",
+            "year":"2020",
+            "duration":"1h 55m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg"
+        },
+        {
+            "movieId":"007",
+            "title":"Mortal Kombat",
+            "description":"Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.",
+            "genre":"Fantasi, Aksi, Petualangan, Cerita Fiksi, Cerita Seru",
+            "year":"2021",
+            "duration":"1h 50m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yiu9ISHAbbZATKl0FaMPh8is7Oa.jpg"
+        },
+        {
+            "movieId":"008",
+            "title":"Nobody",
+            "description":"Hutch Mansell, seorang ayah di pinggiran kota, suami yang terlantar, tidak ada tetangga - \"bukan siapa-siapa\". Ketika dua pencuri masuk ke rumahnya pada suatu malam, kemarahan Hutch yang tidak diketahui sejak lama menyala dan mendorongnya ke jalur brutal yang akan mengungkap rahasia gelap yang dia perjuangkan untuk ditinggalkan.",
+            "genre":"Aksi, Cerita Seru, Kejahatan",
+            "year":"2021",
+            "duration":"1h 32m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg"
+        },
+        {
+            "movieId":"009",
+            "title":"Breach",
+            "description":"A hardened mechanic must stay awake and maintain an interstellar ark fleeing the dying planet Earth with a few thousand lucky souls on board... the last of humanity. Unfortunately, humans are not the only passengers. A shapeshifting alien creature has taken residence, its only goal is to kill as many people as possible. The crew must think quickly to stop this menace before it destroys mankind.",
+            "genre":"Cerita Fiksi, Aksi",
+            "year":"2020",
+            "duration":"1h 32m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/13B6onhL6FzSN2KaNeQeMML05pS.jpg"
+        },
+        {
+            "movieId":"010",
+            "title":"The Unholy",
+            "description":"Alice, a young hearing-impaired girl who, after a supposed visitation from the Virgin Mary, is inexplicably able to hear, speak and heal the sick. As word spreads and people from near and far flock to witness her miracles, a disgraced journalist hoping to revive his career visits the small New England town to investigate. When terrifying events begin to happen all around, he starts to question if these phenomena are the works of the Virgin Mary or something much more sinister.",
+            "genre":"Kengerian",
+            "year":"2021",
+            "duration":"1h 39m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/b4gYVcl8pParX8AjkN90iQrWrWO.jpg"
+       } 
+    ]
+}

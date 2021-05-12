@@ -1,0 +1,50 @@
+package com.dicoding.jetpack.moviecatalog.ui.tvseries
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.dicoding.jetpack.moviecatalog.databinding.FragmentTvSeriesBinding
+import com.dicoding.jetpack.moviecatalog.viewmodel.ViewModelFactory
+
+class TvSeriesFragment : Fragment() {
+
+    private lateinit var binding: FragmentTvSeriesBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentTvSeriesBinding.inflate(layoutInflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        if (activity != null){
+
+            val factory = ViewModelFactory.getInstance(requireActivity())
+            val viewModel = ViewModelProvider(this, factory)[SeriesViewModel::class.java]
+
+
+            val seriesAdapter = SeriesAdapter()
+
+            binding.progressBar.visibility = View.VISIBLE
+            viewModel.getSeries().observe(requireActivity(), { series ->
+                binding.progressBar.visibility = View.GONE
+                seriesAdapter.setSeries(series)
+                seriesAdapter.notifyDataSetChanged()
+            })
+
+            with(binding.rvSeries){
+                layoutManager = LinearLayoutManager(context)
+                setHasFixedSize(true)
+                adapter = seriesAdapter
+            }
+        }
+    }
+
+}

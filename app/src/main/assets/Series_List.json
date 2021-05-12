@@ -1,0 +1,96 @@
+{
+    "seriesList":[
+        {
+            "movieId":"011",
+            "title":"Supernatural",
+            "description":"Dua bersaudara mencari ayah mereka yang hilang, pria yang melatih mereka untuk menjadi prajurit melawan kejahatan supernatural",
+            "genre":"Drama, Misteri, Sci-fi & Fantasy",
+            "year":"2005 - 2020",
+            "duration":"45m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/KoYWXbnYuS3b0GyQPkbuexlVK9.jpg"
+            
+        },
+        {
+            "movieId":"012",
+            "title":"The Falcon and the Winter Soldier",
+            "description":"Following the events of “Avengers: Endgame”, the Falcon, Sam Wilson and the Winter Soldier, Bucky Barnes team up in a global adventure that tests their abilities, and their patience.",
+            "genre":"Sci-fi & Fantasy, Aksi & Petualangan, Drama, Kejahatan dan Politik",
+            "year":"2021",
+            "duration":"45m",
+            "imagePath": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6kbAMLteGO8yyewYau6bJ683sw7.jpg"
+           
+        },
+        {
+            "movieId":"013",
+            "title":"The Flash",
+            "description":"Setelah akselerator partikel menyebabkan badai aneh, Penyelidik CSI Barry Allen disambar petir dan jatuh koma. Beberapa bulan kemudian dia terbangun dengan kekuatan kecepatan super, memberinya kemampuan untuk bergerak melalui Central City seperti malaikat penjaga yang tak terlihat. Meskipun awalnya senang dengan kekuatan barunya, Barry terkejut menemukan bahwa dia bukan satu-satunya \"manusia meta\" yang diciptakan setelah ledakan akselerator - dan tidak semua orang menggunakan kekuatan baru mereka untuk kebaikan. Barry bermitra dengan S.T.A.R. Lab dan mendedikasikan hidupnya untuk melindungi yang tidak bersalah. Untuk saat ini, hanya beberapa teman dekat dan rekan yang tahu bahwa Barry secara harfiah adalah manusia tercepat, tetapi tidak lama sebelum dunia mengetahui apa yang menjadi Barry Allen ... The Flash.",
+            "genre":"Drama, Sci-fi & Fantasy",
+            "year":"2014 - 2021",
+            "duration":"45m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg"
+        },
+        {
+            "movieId":"014",
+            "title":"The Good Doctor",
+            "description":"A young surgeon with Savant syndrome is recruited into the surgical unit of a prestigious hospital. The question will arise: can a person who doesn't have the ability to relate to people actually save their lives",
+            "genre":"Drama",
+            "year":"2017 - 2021",
+            "duration":"45m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/z1K4mJwISETia59rrnMdXxzoSrZ.jpg"
+        },
+        {
+            "movieId":"015",
+            "title":"Lucifer",
+            "description":"Bosan dan tidak bahagia sebagai Penguasa Neraka, Lucifer Morningstar meninggalkan tahtanya dan pensiun ke Los Angeles, di mana ia telah bekerja sama dengan detektif LAPD Chloe Decker untuk menjatuhkan penjahat. Tapi semakin lama dia menjauh dari dunia bawah, semakin besar ancaman bahwa yang terburuk dari umat manusia dapat melarikan diri.",
+            "genre":"Kejahatan, Sci-fi & Fantasy",
+            "year":"2016 - 2020",
+            "duration":"45m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vkGnVBSNpayJ1oCfyVaMvhrim95.jpg"
+        },
+        {
+            "movieId":"016",
+            "title":"WandaVision",
+            "description":"Wanda Maximoff dan Vision — dua makhluk bertenaga super yang menjalani kehidupan pinggiran kota yang ideal — mulai curiga bahwa semuanya tidak seperti yang terlihat.",
+            "genre":"Sci-fi & Fantasy, Misteri, Drama",
+            "year":"2021",
+            "duration":"45m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg"
+        },
+        {
+            "movieId":"017",
+            "title":"Game of Thrones",
+            "description":"Tujuh keluarga bangsawan berjuang untuk menguasai tanah mitos Westeros. Gesekan antara rumah-rumah mengarah ke perang skala penuh. Semua sementara kejahatan yang sangat kuno terbangun di utara terjauh. Di tengah-tengah perang, perintah militer yang diabaikan, Night's Watch, adalah yang berdiri di antara alam manusia dan kengerian es di luarnya.",
+            "genre":"Sci-fi & Fantasy, Drama, Aksi & Petualangan",
+            "year":"2011 - 2020",
+            "duration":"45m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
+        },
+        {
+            "movieId":"018",
+            "title":"Vikings",
+            "description":"The adventures of Ragnar Lothbrok, the greatest hero of his age. The series tells the sagas of Ragnar's band of Viking brothers and his family, as he rises to become King of the Viking tribes. As well as being a fearless warrior, Ragnar embodies the Norse traditions of devotion to the gods. Legend has it that he was a direct descendant of Odin, the god of war and warriors.",
+            "genre":"Aksi & Petualangan, Drama",
+            "year":"2013 - 2020",
+            "duration":"45m",
+          "imagePath":  "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg"
+        },
+        {
+            "movieId":"019",
+            "title":"Legacies",
+            "description":"In a place where young witches, vampires, and werewolves are nurtured to be their best selves in spite of their worst impulses, Klaus Mikaelson’s daughter, 17-year-old Hope Mikaelson, Alaric Saltzman’s twins, Lizzie and Josie Saltzman, among others, come of age into heroes and villains at The Salvatore School for the Young and Gifted.",
+            "genre":"Sci-fi & Fantasy, Drama",
+            "year":"2018 - 2021",
+            "duration":"45m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qTZIgXrBKURBK1KrsT7fe3qwtl9.jpg"
+        },
+        {
+            "movieId":"020",
+            "title":"Stranger Things",
+            "description":"Ketika seorang bocah lelaki menghilang, sebuah kota kecil mengungkap misteri yang melibatkan eksperimen rahasia, kekuatan gaib yang menakutkan, dan seorang gadis kecil yang aneh.",
+            "genre":"Sci-fi & Fantasy, Misteri, Drama",
+            "year":"2016 - 2019",
+            "duration":"45m",
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9URpkzaMMLK5bdJ1a5HBafzYEWj.jpg"
+        }
+    ]
+}
