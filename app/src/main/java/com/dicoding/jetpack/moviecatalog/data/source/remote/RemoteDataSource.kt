@@ -1,5 +1,7 @@
 package com.dicoding.jetpack.moviecatalog.data.source.remote
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.dicoding.jetpack.moviecatalog.data.source.remote.response.MovieResponse
 import com.dicoding.jetpack.moviecatalog.utils.EspressoIdlingResources
 import com.dicoding.jetpack.moviecatalog.utils.JsonHelper
@@ -15,25 +17,25 @@ class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
             }
     }
 
-    fun getAllMovies(callback: LoadMovieCallback){
+    fun getAllMovies(): LiveData<ApiResponse<List<MovieResponse>>>{
         EspressoIdlingResources.increment()
-        callback.onAllMoviesReceived(jsonHelper.loadMovies())
+        val resultMovie = MutableLiveData<ApiResponse<List<MovieResponse>>>()
+        resultMovie.value = ApiResponse.success(jsonHelper.loadMovies())
         EspressoIdlingResources.decrement()
+
+        return resultMovie
     }
 
-    fun getAllSeries(callback: LoadSeriesCallback) {
+    fun getAllSeries() : LiveData<ApiResponse<List<MovieResponse>>> {
         EspressoIdlingResources.increment()
-        callback.onAllSeriesReceived(jsonHelper.loadSeries())
+        val resultSeries = MutableLiveData<ApiResponse<List<MovieResponse>>>()
+        resultSeries.value = ApiResponse.success(jsonHelper.loadSeries())
         EspressoIdlingResources.decrement()
+
+        return resultSeries
     }
 
-    interface LoadMovieCallback{
-        fun onAllMoviesReceived(movieResponse: List<MovieResponse>)
-    }
 
-    interface LoadSeriesCallback{
-        fun onAllSeriesReceived(seriesResponse : List<MovieResponse>)
-    }
 
 
 }

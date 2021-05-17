@@ -7,7 +7,9 @@
             "genre":"Drama, Misteri, Sci-fi & Fantasy",
             "year":"2005 - 2020",
             "duration":"45m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/KoYWXbnYuS3b0GyQPkbuexlVK9.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/KoYWXbnYuS3b0GyQPkbuexlVK9.jpg",
+            "favorited": false,
+            "tvSeries": true
             
         },
         {
@@ -17,7 +19,9 @@
             "genre":"Sci-fi & Fantasy, Aksi & Petualangan, Drama, Kejahatan dan Politik",
             "year":"2021",
             "duration":"45m",
-            "imagePath": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6kbAMLteGO8yyewYau6bJ683sw7.jpg"
+            "imagePath": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+            "favorited": false,
+            "tvSeries": true
            
         },
         {
@@ -27,7 +31,9 @@
             "genre":"Drama, Sci-fi & Fantasy",
             "year":"2014 - 2021",
             "duration":"45m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg",
+            "favorited": false,
+            "tvSeries": true
         },
         {
             "movieId":"014",
@@ -36,7 +42,9 @@
             "genre":"Drama",
             "year":"2017 - 2021",
             "duration":"45m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/z1K4mJwISETia59rrnMdXxzoSrZ.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/z1K4mJwISETia59rrnMdXxzoSrZ.jpg",
+            "favorited": false,
+            "tvSeries": true
         },
         {
             "movieId":"015",
@@ -45,7 +53,9 @@
             "genre":"Kejahatan, Sci-fi & Fantasy",
             "year":"2016 - 2020",
             "duration":"45m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vkGnVBSNpayJ1oCfyVaMvhrim95.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vkGnVBSNpayJ1oCfyVaMvhrim95.jpg",
+            "favorited": false,
+            "tvSeries": true
         },
         {
             "movieId":"016",
@@ -54,7 +64,9 @@
             "genre":"Sci-fi & Fantasy, Misteri, Drama",
             "year":"2021",
             "duration":"45m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg",
+            "favorited": false,
+            "tvSeries": true
         },
         {
             "movieId":"017",
@@ -63,7 +75,9 @@
             "genre":"Sci-fi & Fantasy, Drama, Aksi & Petualangan",
             "year":"2011 - 2020",
             "duration":"45m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
+            "favorited": false,
+            "tvSeries": true
         },
         {
             "movieId":"018",
@@ -72,7 +86,9 @@
             "genre":"Aksi & Petualangan, Drama",
             "year":"2013 - 2020",
             "duration":"45m",
-          "imagePath":  "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg"
+          "imagePath":  "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg",
+            "favorited": false,
+            "tvSeries": true
         },
         {
             "movieId":"019",
@@ -81,7 +97,9 @@
             "genre":"Sci-fi & Fantasy, Drama",
             "year":"2018 - 2021",
             "duration":"45m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qTZIgXrBKURBK1KrsT7fe3qwtl9.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qTZIgXrBKURBK1KrsT7fe3qwtl9.jpg",
+            "favorited": false,
+            "tvSeries": true
         },
         {
             "movieId":"020",
@@ -90,7 +108,9 @@
             "genre":"Sci-fi & Fantasy, Misteri, Drama",
             "year":"2016 - 2019",
             "duration":"45m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9URpkzaMMLK5bdJ1a5HBafzYEWj.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9URpkzaMMLK5bdJ1a5HBafzYEWj.jpg",
+            "favorited": false,
+            "tvSeries": true
         }
     ]
 }

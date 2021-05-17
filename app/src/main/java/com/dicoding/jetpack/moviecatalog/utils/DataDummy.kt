@@ -1,6 +1,6 @@
 package com.dicoding.jetpack.moviecatalog.utils
 
-import com.dicoding.jetpack.moviecatalog.data.MovieEntity
+import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.data.source.remote.response.MovieResponse
 
 
@@ -18,6 +18,7 @@ object DataDummy {
                 "2018",
                 "2h 16m",
            "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+            false,
             false)
         )
 
@@ -30,6 +31,7 @@ object DataDummy {
                 "2019",
                 "2h 2m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg",
+                false,
                 false
             )
         )
@@ -43,6 +45,7 @@ object DataDummy {
                 "2018",
                 "2h 23m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xLPffWMhMj1l50ND3KchMjYoKmE.jpg",
+                false,
                 false
             )
         )
@@ -56,6 +59,7 @@ object DataDummy {
                 "2018",
                 "2h 15m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
+                false,
                 false
             )
         )
@@ -69,6 +73,7 @@ object DataDummy {
                 "2019",
                 "2h 17m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qRyy2UmjC5ur9bDi3kpNNRCc5nc.jpg",
+                false,
                 false
             )
         )
@@ -82,6 +87,7 @@ object DataDummy {
                 "2020",
                 "1h 55m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg",
+                false,
                 false
             )
         )
@@ -95,6 +101,7 @@ object DataDummy {
                 "2021",
                 "1h 50m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yiu9ISHAbbZATKl0FaMPh8is7Oa.jpg",
+                false,
                 false
             )
         )
@@ -108,6 +115,7 @@ object DataDummy {
                 "2021",
                 "1h 32m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg",
+                false,
                 false
             )
         )
@@ -121,6 +129,7 @@ object DataDummy {
                 "2020",
                 "1h 32m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/13B6onhL6FzSN2KaNeQeMML05pS.jpg",
+                false,
                 false
             )
         )
@@ -134,6 +143,7 @@ object DataDummy {
                 "2021",
                 "1h 39m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/b4gYVcl8pParX8AjkN90iQrWrWO.jpg",
+                false,
                 false
             )
         )
@@ -152,7 +162,8 @@ object DataDummy {
                 "2005 - 2020",
                 "45m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/KoYWXbnYuS3b0GyQPkbuexlVK9.jpg",
-                false
+                false,
+                true
             )
         )
 
@@ -165,7 +176,8 @@ object DataDummy {
                 "2021",
                 "45m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
-                false
+                false,
+                true
             )
         )
 
@@ -178,7 +190,8 @@ object DataDummy {
                 "2014 - 2021",
                 "45m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg",
-                false
+                false,
+                true
             )
         )
 
@@ -191,7 +204,8 @@ object DataDummy {
                 "2017 - 2021",
                 "45m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/z1K4mJwISETia59rrnMdXxzoSrZ.jpg",
-                false
+                false,
+                true
             )
         )
 
@@ -204,7 +218,8 @@ object DataDummy {
                 "2016 - 2020",
                 "45m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vkGnVBSNpayJ1oCfyVaMvhrim95.jpg",
-                false
+                false,
+                true
             )
         )
 
@@ -217,7 +232,8 @@ object DataDummy {
                 "2021",
                 "45m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg",
-                false
+                false,
+                true
             )
         )
 
@@ -230,7 +246,8 @@ object DataDummy {
                 "2011 - 2020",
                 "45m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
-                false
+                false,
+                true
             )
         )
 
@@ -243,7 +260,8 @@ object DataDummy {
                 "2013 - 2020",
                 "45m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg",
-                false
+                false,
+                true
             )
         )
 
@@ -256,7 +274,8 @@ object DataDummy {
                 "2018 - 2021",
                 "45m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qTZIgXrBKURBK1KrsT7fe3qwtl9.jpg",
-                false
+                false,
+                true
             )
         )
 
@@ -269,7 +288,8 @@ object DataDummy {
                 "2016 - 2019",
                 "45m",
                 "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9URpkzaMMLK5bdJ1a5HBafzYEWj.jpg",
-                false
+                false,
+                true
             )
         )
 

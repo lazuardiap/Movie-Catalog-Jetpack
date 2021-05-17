@@ -7,5 +7,7 @@ data class MovieResponse(
     var genre: String,
     var year: String,
     var duration: String,
-    var imagePath: String
+    var imagePath: String,
+    var favorited: Boolean = false,
+    var tvSeries: Boolean = false
 )

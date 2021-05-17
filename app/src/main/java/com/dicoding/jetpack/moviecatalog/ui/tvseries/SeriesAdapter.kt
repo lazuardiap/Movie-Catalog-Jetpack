@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.dicoding.jetpack.moviecatalog.R
-import com.dicoding.jetpack.moviecatalog.data.MovieEntity
+import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.databinding.ItemsSeriesBinding
 import com.dicoding.jetpack.moviecatalog.ui.detail.DetailMovieActivity
 

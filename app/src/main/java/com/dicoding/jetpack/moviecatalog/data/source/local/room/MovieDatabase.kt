@@ -1,10 +1,10 @@
-package com.dicoding.jetpack.moviecatalog.room
+package com.dicoding.jetpack.moviecatalog.data.source.local.room
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.dicoding.jetpack.moviecatalog.data.MovieEntity
+import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 
 
 @Database(entities = [MovieEntity::class],
@@ -25,7 +25,7 @@ abstract class MovieDatabase : RoomDatabase() {
                 Room.databaseBuilder(
                     context.applicationContext,
                     MovieDatabase::class.java,
-                    "Academies.db"
+                    "Movies.db"
                 ).build().apply {
                     INSTANCE = this
                 }

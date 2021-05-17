@@ -7,7 +7,9 @@
             "genre":"Drama, Percintaan, Musik",
             "year" :"2018",
             "duration":"2h 16m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+            "favorited": false,
+            "tvSeries": false
         },
         {
             "movieId":"002",
@@ -16,7 +18,9 @@
             "genre":"Aksi, Cerita Fiksi, Petualangan",
             "year":"2019",
             "duration":"2h 2m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg",
+            "favorited": false,
+            "tvSeries": false
         },
         {
             "movieId":"003",
@@ -25,7 +29,9 @@
             "genre":"Aksi, Petualangan, Fantasi",
             "year":"2018",
             "duration":"2h 23m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xLPffWMhMj1l50ND3KchMjYoKmE.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xLPffWMhMj1l50ND3KchMjYoKmE.jpg",
+            "favorited": false,
+            "tvSeries": false
         },
         {
             "movieId":"004",
@@ -34,7 +40,9 @@
             "genre":"Musik, Drama, Sejarah",
             "year":"2018",
             "duration":"2h 15m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
+            "favorited": false,
+            "tvSeries": false
         },
         {
             "movieId":"005",
@@ -43,7 +51,9 @@
             "genre":"Aksi, Petualangan, Komedi",
             "year":"2019",
             "duration":"2h 17m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qRyy2UmjC5ur9bDi3kpNNRCc5nc.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qRyy2UmjC5ur9bDi3kpNNRCc5nc.jpg",
+            "favorited": false,
+            "tvSeries": false
         },
         {
             "movieId":"006",
@@ -52,7 +62,9 @@
             "genre":"Petualangan, Fantasi",
             "year":"2020",
             "duration":"1h 55m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg",
+            "favorited": false,
+            "tvSeries": false
         },
         {
             "movieId":"007",
@@ -61,7 +73,9 @@
             "genre":"Fantasi, Aksi, Petualangan, Cerita Fiksi, Cerita Seru",
             "year":"2021",
             "duration":"1h 50m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yiu9ISHAbbZATKl0FaMPh8is7Oa.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yiu9ISHAbbZATKl0FaMPh8is7Oa.jpg",
+            "favorited": false,
+            "tvSeries": false
         },
         {
             "movieId":"008",
@@ -70,7 +84,9 @@
             "genre":"Aksi, Cerita Seru, Kejahatan",
             "year":"2021",
             "duration":"1h 32m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg",
+            "favorited": false,
+            "tvSeries": false
         },
         {
             "movieId":"009",
@@ -79,7 +95,9 @@
             "genre":"Cerita Fiksi, Aksi",
             "year":"2020",
             "duration":"1h 32m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/13B6onhL6FzSN2KaNeQeMML05pS.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/13B6onhL6FzSN2KaNeQeMML05pS.jpg",
+            "favorited": false,
+            "tvSeries": false
         },
         {
             "movieId":"010",
@@ -88,7 +106,9 @@
             "genre":"Kengerian",
             "year":"2021",
             "duration":"1h 39m",
-            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/b4gYVcl8pParX8AjkN90iQrWrWO.jpg"
+            "imagePath":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/b4gYVcl8pParX8AjkN90iQrWrWO.jpg",
+            "favorited": false,
+            "tvSeries": false
        } 
     ]
 }

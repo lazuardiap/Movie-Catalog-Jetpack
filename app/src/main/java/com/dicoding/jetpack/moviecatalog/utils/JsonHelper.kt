@@ -37,8 +37,10 @@ class JsonHelper (private val context: Context) {
                 val year = movie.getString("year")
                 val duration = movie.getString("duration")
                 val imagePath = movie.getString("imagePath")
+                val favorited = movie.getBoolean("favorited")
+                val tvSeries = movie.getBoolean("tvSeries")
 
-                val movieResponse = MovieResponse(id, title, description, genre, year, duration, imagePath)
+                val movieResponse = MovieResponse(id, title, description, genre, year, duration, imagePath, favorited, tvSeries)
                 list.add(movieResponse)
 
             }
@@ -64,8 +66,10 @@ class JsonHelper (private val context: Context) {
                 val year = movie.getString("year")
                 val duration = movie.getString("duration")
                 val imagePath = movie.getString("imagePath")
+                val favorited = movie.getBoolean("favorited")
+                val tvSeries = movie.getBoolean("tvSeries")
 
-                val movieResponse = MovieResponse(id, title, description, genre, year, duration, imagePath)
+                val movieResponse = MovieResponse(id, title, description, genre, year, duration, imagePath, favorited, tvSeries )
                 list.add(movieResponse)
 
             }

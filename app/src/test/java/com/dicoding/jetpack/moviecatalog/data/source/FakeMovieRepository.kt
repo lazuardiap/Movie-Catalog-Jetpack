@@ -2,7 +2,7 @@ package com.dicoding.jetpack.moviecatalog.data.source
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.dicoding.jetpack.moviecatalog.data.MovieEntity
+import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.data.source.remote.RemoteDataSource
 import com.dicoding.jetpack.moviecatalog.data.source.remote.response.MovieResponse
 

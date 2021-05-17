@@ -3,7 +3,7 @@ package com.dicoding.jetpack.moviecatalog.ui.detail
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
-import com.dicoding.jetpack.moviecatalog.data.MovieEntity
+import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.data.source.MovieRepository
 import com.dicoding.jetpack.moviecatalog.utils.DataDummy
 import org.junit.Test

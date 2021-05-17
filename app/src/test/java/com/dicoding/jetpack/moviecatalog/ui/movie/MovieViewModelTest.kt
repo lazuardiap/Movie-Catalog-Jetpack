@@ -3,7 +3,7 @@ package com.dicoding.jetpack.moviecatalog.ui.movie
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
-import com.dicoding.jetpack.moviecatalog.data.MovieEntity
+import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.data.source.MovieRepository
 import com.dicoding.jetpack.moviecatalog.utils.DataDummy
 import org.junit.Assert.*
@@ -15,7 +15,6 @@ import org.mockito.Mock
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.verify
 import org.mockito.junit.MockitoJUnitRunner
-import kotlin.collections.ArrayList
 
 @RunWith(MockitoJUnitRunner::class)
 class MovieViewModelTest{
