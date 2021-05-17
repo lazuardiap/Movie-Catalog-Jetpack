@@ -18,5 +18,6 @@
     <string name="movie_year">tahun film</string>
     <string name="season">Musim</string>
     <string name="movie_season">musim film</string>
+    <string name="app_logo_splash">App Logo Splash</string>
 
 </resources>

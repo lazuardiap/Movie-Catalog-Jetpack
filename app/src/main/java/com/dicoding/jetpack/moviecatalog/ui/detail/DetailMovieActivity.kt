@@ -57,18 +57,23 @@ class DetailMovieActivity : AppCompatActivity() {
     }
 
     private fun populateMovie(movser: MovieEntity){
-        detailContentBinding.textTitle.text = movser.title
-        detailContentBinding.textMovieGenre.text = movser.genre
-        detailContentBinding.textMovieDuration.text = movser.duration
-        detailContentBinding.textMovieYear.text = movser.year
-        detailContentBinding.textDescription.text = movser.description
 
-        Glide.with(this)
-            .load(movser.imagePath)
-            .transform(RoundedCorners(30))
-            .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
-                .error(R.drawable.ic_error))
-            .into(detailContentBinding.imagePoster)
+        detailContentBinding.apply{
+            textTitle.text = movser.title
+            textMovieGenre.text = movser.genre
+            textMovieDuration.text = movser.duration
+            textMovieYear.text = movser.year
+            textDescription.text = movser.description
+
+            Glide.with(this@DetailMovieActivity)
+                .load(movser.imagePath)
+                .transform(RoundedCorners(30))
+                .apply(RequestOptions.placeholderOf(R.drawable.ic_loading)
+                    .error(R.drawable.ic_error))
+                .into(imagePoster)
+
+        }
+
 
     }
 }

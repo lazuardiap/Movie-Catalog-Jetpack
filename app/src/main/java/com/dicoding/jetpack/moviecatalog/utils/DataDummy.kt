@@ -17,7 +17,8 @@ object DataDummy {
                 "Drama, Percintaan, Musik",
                 "2018",
                 "2h 16m",
-           "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg")
+           "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+            false)
         )
 
         movies.add(
@@ -28,7 +29,8 @@ object DataDummy {
                 "Aksi, Cerita Fiksi, Petualangan",
                 "2019",
                 "2h 2m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg",
+                false
             )
         )
 
@@ -40,7 +42,8 @@ object DataDummy {
                 "Aksi, Petualangan, Fantasi",
                 "2018",
                 "2h 23m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xLPffWMhMj1l50ND3KchMjYoKmE.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xLPffWMhMj1l50ND3KchMjYoKmE.jpg",
+                false
             )
         )
 
@@ -52,7 +55,8 @@ object DataDummy {
                 "Musik, Drama, Sejarah",
                 "2018",
                 "2h 15m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
+                false
             )
         )
 
@@ -64,7 +68,8 @@ object DataDummy {
                 "Aksi, Petualangan, Komedi",
                 "2019",
                 "2h 17m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qRyy2UmjC5ur9bDi3kpNNRCc5nc.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qRyy2UmjC5ur9bDi3kpNNRCc5nc.jpg",
+                false
             )
         )
 
@@ -76,7 +81,8 @@ object DataDummy {
                 "Petualangan, Fantasi",
                 "2020",
                 "1h 55m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg",
+                false
             )
         )
 
@@ -88,7 +94,8 @@ object DataDummy {
                 "Fantasi, Aksi, Petualangan, Cerita Fiksi, Cerita Seru",
                 "2021",
                 "1h 50m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yiu9ISHAbbZATKl0FaMPh8is7Oa.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yiu9ISHAbbZATKl0FaMPh8is7Oa.jpg",
+                false
             )
         )
 
@@ -100,7 +107,8 @@ object DataDummy {
                 "Aksi, Cerita Seru, Kejahatan",
                 "2021",
                 "1h 32m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg",
+                false
             )
         )
 
@@ -112,7 +120,8 @@ object DataDummy {
                 "Cerita Fiksi, Aksi",
                 "2020",
                 "1h 32m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/13B6onhL6FzSN2KaNeQeMML05pS.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/13B6onhL6FzSN2KaNeQeMML05pS.jpg",
+                false
             )
         )
 
@@ -124,7 +133,8 @@ object DataDummy {
                 "Kengerian",
                 "2021",
                 "1h 39m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/b4gYVcl8pParX8AjkN90iQrWrWO.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/b4gYVcl8pParX8AjkN90iQrWrWO.jpg",
+                false
             )
         )
         return movies
@@ -141,7 +151,8 @@ object DataDummy {
                 "Drama, Misteri, Sci-fi & Fantasy",
                 "2005 - 2020",
                 "45m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/KoYWXbnYuS3b0GyQPkbuexlVK9.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/KoYWXbnYuS3b0GyQPkbuexlVK9.jpg",
+                false
             )
         )
 
@@ -153,7 +164,8 @@ object DataDummy {
                 "Sci-fi & Fantasy, Aksi & Petualangan, Drama, Kejahatan dan Politik",
                 "2021",
                 "45m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6kbAMLteGO8yyewYau6bJ683sw7.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+                false
             )
         )
 
@@ -165,7 +177,8 @@ object DataDummy {
                 "Drama, Sci-fi & Fantasy",
                 "2014 - 2021",
                 "45m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg",
+                false
             )
         )
 
@@ -177,7 +190,8 @@ object DataDummy {
                 "Drama",
                 "2017 - 2021",
                 "45m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/z1K4mJwISETia59rrnMdXxzoSrZ.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/z1K4mJwISETia59rrnMdXxzoSrZ.jpg",
+                false
             )
         )
 
@@ -189,7 +203,8 @@ object DataDummy {
                 "Kejahatan, Sci-fi & Fantasy",
                 "2016 - 2020",
                 "45m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vkGnVBSNpayJ1oCfyVaMvhrim95.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vkGnVBSNpayJ1oCfyVaMvhrim95.jpg",
+                false
             )
         )
 
@@ -201,7 +216,8 @@ object DataDummy {
                 "Sci-fi & Fantasy, Misteri, Drama",
                 "2021",
                 "45m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg",
+                false
             )
         )
 
@@ -213,7 +229,8 @@ object DataDummy {
                 "Sci-fi & Fantasy, Drama, Aksi & Petualangan",
                 "2011 - 2020",
                 "45m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
+                false
             )
         )
 
@@ -225,7 +242,8 @@ object DataDummy {
                 "Aksi & Petualangan, Drama",
                 "2013 - 2020",
                 "45m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg",
+                false
             )
         )
 
@@ -237,7 +255,8 @@ object DataDummy {
                 "Sci-fi & Fantasy, Drama",
                 "2018 - 2021",
                 "45m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qTZIgXrBKURBK1KrsT7fe3qwtl9.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qTZIgXrBKURBK1KrsT7fe3qwtl9.jpg",
+                false
             )
         )
 
@@ -249,7 +268,8 @@ object DataDummy {
                 "Sci-fi & Fantasy, Misteri, Drama",
                 "2016 - 2019",
                 "45m",
-                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9URpkzaMMLK5bdJ1a5HBafzYEWj.jpg"
+                "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9URpkzaMMLK5bdJ1a5HBafzYEWj.jpg",
+                false
             )
         )
 

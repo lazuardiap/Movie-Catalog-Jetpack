@@ -2,7 +2,6 @@ package com.dicoding.jetpack.moviecatalog.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.dicoding.jetpack.moviecatalog.R
 import com.dicoding.jetpack.moviecatalog.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {

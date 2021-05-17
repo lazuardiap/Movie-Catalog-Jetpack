@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.dicoding.jetpack.moviecatalog.data.MovieEntity
 import com.dicoding.jetpack.moviecatalog.data.source.MovieRepository
-import com.dicoding.jetpack.moviecatalog.utils.DataDummy
 
 class DetailMovieViewModel(private val movieRepository: MovieRepository) : ViewModel() {
 
