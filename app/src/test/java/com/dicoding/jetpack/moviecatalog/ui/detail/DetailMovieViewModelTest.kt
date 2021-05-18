@@ -58,42 +58,9 @@ class DetailMovieViewModelTest {
 
         `when`(movieRepository.getDetailMovies(movieId, dummyMovie.tvSeries)).thenReturn(movies)
 
-//        val movieEntity = viewModel.detailMovie.value as MovieEntity
-//        verify(movieRepository).getDetailMovies(movieId, dummyMovie.tvSeries)
-//        assertNotNull(movieEntity)
-//        assertEquals(dummyMovie.movieId, movieEntity.movieId)
-//        assertEquals(dummyMovie.title, movieEntity.title)
-//        assertEquals(dummyMovie.genre, movieEntity.genre)
-//        assertEquals(dummyMovie.year, movieEntity.year)
-//        assertEquals(dummyMovie.duration, movieEntity.duration)
-//        assertEquals(dummyMovie.description, movieEntity.description)
-//        assertEquals(dummyMovie.imagePath, movieEntity.imagePath)
-
         viewModel.detailMovie.observeForever(observer)
 
         verify(observer).onChanged(dummyDetails)
     }
 
-//    @Test
-//    fun getSeries(){
-//        val dummyDetails = Resource.success(DataDummy.generateMovieDetails(dummySeries, true))
-//        val series = MutableLiveData<Resource<MovieEntity>>()
-//        series.value = dummyDetails
-//
-//        `when`(movieRepository.getDetailMovies(seriesId, dummySeries.tvSeries)).thenReturn(series)
-//        viewModel.setSelectedMovie(seriesId, dummySeries.tvSeries)
-//        val movieEntity = viewModel.detailMovie.value as MovieEntity
-//        verify(movieRepository).getDetailMovies(seriesId, dummySeries.tvSeries)
-//        assertNotNull(movieEntity)
-//        assertEquals(dummySeries.movieId, movieEntity.movieId)
-//        assertEquals(dummySeries.title, movieEntity.title)
-//        assertEquals(dummySeries.genre, movieEntity.genre)
-//        assertEquals(dummySeries.year, movieEntity.year)
-//        assertEquals(dummySeries.duration, movieEntity.duration)
-//        assertEquals(dummySeries.description, movieEntity.description)
-//        assertEquals(dummySeries.imagePath, movieEntity.imagePath)
-//
-//        viewModel.detailMovie.observeForever(observer)
-//        verify(observer).onChanged(dummyDetails)
-//    }
 }

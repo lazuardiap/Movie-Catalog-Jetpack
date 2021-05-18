@@ -1,9 +1,12 @@
 package com.dicoding.jetpack.moviecatalog.ui.home
 
+import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.IdlingRegistry
+import androidx.test.espresso.ViewAction
+import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions
@@ -77,6 +80,26 @@ class HomeActivityTest{
         onView(withId(R.id.text_movie_genre)).check(matches(withText(dummySeries[0].genre)))
         onView(withId(R.id.text_movie_duration)).check(matches(withText(dummySeries[0].duration)))
         onView(withId(R.id.text_movie_year)).check(matches(withText(dummySeries[0].year)))
+
+    }
+
+    @Test
+    fun loadBookmarks(){
+        onView(withId(R.id.rv_movie)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(0,click()))
+        onView(withId(R.id.action_favorite)).perform(click())
+        onView(isRoot()).perform(ViewActions.pressBack())
+        onView(withText("Favorite")).perform(click())
+        onView(withId(R.id.rv_favorite)).check(matches(isDisplayed()))
+        onView(withId(R.id.rv_favorite)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(0, click()))
+
+        onView(withId(R.id.text_title)).check(matches(isDisplayed()))
+        onView(withId(R.id.text_description)).check(matches(isDisplayed()))
+        onView(withId(R.id.text_movie_genre)).check(matches(isDisplayed()))
+        onView(withId(R.id.text_movie_duration)).check(matches(isDisplayed()))
+        onView(withId(R.id.text_movie_year)).check(matches(isDisplayed()))
+
+        onView(withId(R.id.action_favorite)).perform(click())
+        onView(isRoot()).perform(ViewActions.pressBack())
 
     }
 

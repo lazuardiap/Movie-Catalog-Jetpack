@@ -33,7 +33,6 @@ class MovieRepositoryTest {
 
     private val movieResponses = DataDummy.generateRemoteDummyMovies()
     private val movieId = movieResponses[0].movieId
-    private val seriesResponses = DataDummy.generateRemoteDummySeries()
 
     @Test
     fun getAllMovies() {
