@@ -6,6 +6,7 @@ import androidx.lifecycle.Observer
 import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.data.source.MovieRepository
 import com.dicoding.jetpack.moviecatalog.utils.DataDummy
+import com.dicoding.jetpack.moviecatalog.vo.Resource
 import com.nhaarman.mockitokotlin2.verify
 import org.junit.Assert.*
 import org.junit.Before
@@ -27,7 +28,7 @@ class SeriesViewModelTest{
     private lateinit var movieRepository: MovieRepository
 
     @Mock
-    private lateinit var observer: Observer<List<MovieEntity>>
+    private lateinit var observer: Observer<Resource<List<MovieEntity>>>
 
     @Before
     fun setup(){
@@ -36,12 +37,12 @@ class SeriesViewModelTest{
 
     @Test
     fun getSeries(){
-        val dummySeries = DataDummy.generateDummySeries()
-        val series = MutableLiveData<List<MovieEntity>>()
+        val dummySeries = Resource.success(DataDummy.generateDummySeries())
+        val series = MutableLiveData<Resource<List<MovieEntity>>>()
         series.value = dummySeries
 
         Mockito.`when`(movieRepository.getAllSeries()).thenReturn(series)
-        val seriesEntities = viewModel.getSeries().value
+        val seriesEntities = viewModel.getSeries().value?.data
         Mockito.verify<MovieRepository>(movieRepository).getAllSeries()
         assertNotNull(seriesEntities)
         assertEquals(10, seriesEntities?.size)

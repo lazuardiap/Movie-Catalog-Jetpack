@@ -6,6 +6,7 @@ import androidx.lifecycle.Observer
 import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.data.source.MovieRepository
 import com.dicoding.jetpack.moviecatalog.utils.DataDummy
+import com.dicoding.jetpack.moviecatalog.vo.Resource
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
@@ -28,7 +29,7 @@ class MovieViewModelTest{
     private lateinit var movieRepository: MovieRepository
 
     @Mock
-    private lateinit var observer: Observer<List<MovieEntity>>
+    private lateinit var observer: Observer<Resource<List<MovieEntity>>>
 
     @Before
     fun setup(){
@@ -37,13 +38,13 @@ class MovieViewModelTest{
 
     @Test
     fun getMovies(){
-        val dummyMovies = DataDummy.generateDummyMovies()
-        val movies = MutableLiveData<List<MovieEntity>>()
+        val dummyMovies = Resource.success(DataDummy.generateDummyMovies())
+        val movies = MutableLiveData<Resource<List<MovieEntity>>>()
         movies.value = dummyMovies
 
         `when`(movieRepository.getAllMovies()).thenReturn(movies)
-        val movieEntities = viewModel.getMovies().value
-        verify<MovieRepository>(movieRepository).getAllMovies()
+        val movieEntities = viewModel.getMovies().value?.data
+        verify(movieRepository).getAllMovies()
         assertNotNull(movieEntities)
         assertEquals(10, movieEntities?.size)
 
