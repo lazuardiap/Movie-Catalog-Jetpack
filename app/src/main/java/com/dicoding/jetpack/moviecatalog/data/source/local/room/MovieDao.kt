@@ -15,7 +15,8 @@ interface MovieDao {
     @Query("SELECT * FROM movieentities where favorited = 1")
     fun getFavoritedMovie(): LiveData<List<MovieEntity>>
 
-    @Query("SELECT * FROM movieentities where movieId = movieId")
+    @Transaction
+    @Query("SELECT * FROM movieentities where movieId = :movieId and tvSeries = :series")
     fun getDetailMovie(movieId : String, series: Boolean) : LiveData<MovieEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

@@ -5,6 +5,7 @@
     <string name="movies">Movies</string>
     <string name="tv_series">TV Series</string>
     <string name="menu_series">series</string>
+    <string name="favorite_menu">Favorite</string>
 
 
     <string name="title">Title</string>
@@ -19,5 +20,9 @@
     <string name="season">Musim</string>
     <string name="movie_season">musim film</string>
     <string name="app_logo_splash">App Logo Splash</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favorited">Favorited</string>
+    <string name="favorited_menu">Favorited Menu</string>
 
 </resources>

@@ -2,6 +2,7 @@ package com.dicoding.jetpack.moviecatalog.ui.tvseries
 
 import android.content.Intent
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -44,6 +45,7 @@ class SeriesAdapter : RecyclerView.Adapter<SeriesAdapter.SeriesViewHolder>() {
                 itemView.setOnClickListener{
                     val intent = Intent(itemView.context, DetailMovieActivity::class.java)
                     intent.putExtra(DetailMovieActivity.EXTRA_MOVIE, movie.movieId)
+                    intent.putExtra(DetailMovieActivity.EXTRA_SERIES, movie.tvSeries)
                     itemView.context.startActivity(intent)
                 }
                 Glide.with(itemView.context)
@@ -51,6 +53,12 @@ class SeriesAdapter : RecyclerView.Adapter<SeriesAdapter.SeriesViewHolder>() {
                     .apply(RequestOptions.placeholderOf(R.drawable.ic_loading))
                     .error(R.drawable.ic_error)
                     .into(imgPoster)
+
+                if (movie.favorited){
+                    favoritedLabel.visibility = View.VISIBLE
+                }else{
+                    favoritedLabel.visibility = View.GONE
+                }
             }
         }
     }

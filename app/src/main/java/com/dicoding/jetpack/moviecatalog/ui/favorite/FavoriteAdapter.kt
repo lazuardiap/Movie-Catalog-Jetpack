@@ -1,42 +1,45 @@
-package com.dicoding.jetpack.moviecatalog.ui.movie
+package com.dicoding.jetpack.moviecatalog.ui.favorite
 
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.dicoding.jetpack.moviecatalog.R
 import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
-import com.dicoding.jetpack.moviecatalog.databinding.ItemsMovieBinding
+import com.dicoding.jetpack.moviecatalog.databinding.ItemsFavoriteBinding
 import com.dicoding.jetpack.moviecatalog.ui.detail.DetailMovieActivity
 
-class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
+class FavoriteAdapter : RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>() {
 
-    private var listMovie = ArrayList<MovieEntity>()
+    private val listMovie = ArrayList<MovieEntity>()
 
-
-    fun setMovie(movies: List<MovieEntity>?){
+    fun setMovies(movies : List<MovieEntity>?){
         if (movies == null) return
         this.listMovie.clear()
         this.listMovie.addAll(movies)
+
+        this.notifyDataSetChanged()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
-       val binding = ItemsMovieBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return MovieViewHolder(binding)
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): FavoriteAdapter.FavoriteViewHolder {
+        val binding = ItemsFavoriteBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return FavoriteViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: FavoriteAdapter.FavoriteViewHolder, position: Int) {
         val movie = listMovie[position]
         holder.bind(movie)
     }
 
     override fun getItemCount(): Int = listMovie.size
 
-    class MovieViewHolder(private val binding: ItemsMovieBinding) : RecyclerView.ViewHolder(binding.root){
-        fun bind(movie: MovieEntity){
+    inner class FavoriteViewHolder(private val binding : ItemsFavoriteBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(movie : MovieEntity){
             with(binding){
                 tvItemTitle.text = movie.title
                 tvItemGenre.text = movie.genre
@@ -52,13 +55,9 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
                     .apply(RequestOptions.placeholderOf(R.drawable.ic_loading))
                     .error(R.drawable.ic_error)
                     .into(imgPoster)
-
-                if (movie.favorited){
-                    favoritedLabel.visibility = View.VISIBLE
-                }else{
-                    favoritedLabel.visibility = View.GONE
-                }
             }
         }
+
     }
+
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_series"
+        android:id="@+id/rv_favorite"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="16dp"
@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/items_series">
+        tools:listitem="@layout/items_favorite">
 
     </androidx.recyclerview.widget.RecyclerView>
 
