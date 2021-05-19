@@ -1,6 +1,7 @@
 package com.dicoding.jetpack.moviecatalog.data.source.local
 
 import androidx.lifecycle.LiveData
+import androidx.paging.DataSource
 import com.dicoding.jetpack.moviecatalog.data.source.local.room.MovieDao
 
 class LocalDataSource private constructor(private val mMovieDao : MovieDao) {
@@ -12,11 +13,11 @@ class LocalDataSource private constructor(private val mMovieDao : MovieDao) {
             INSTANCE ?: LocalDataSource(movieDao)
     }
 
-    fun getAllMovies() : LiveData<List<MovieEntity>> = mMovieDao.getMovies()
+    fun getAllMovies() : DataSource.Factory<Int, MovieEntity> = mMovieDao.getMovies()
 
-    fun getAllSeries() : LiveData<List<MovieEntity>> = mMovieDao.getSeries()
+    fun getAllSeries() : DataSource.Factory<Int, MovieEntity> = mMovieDao.getSeries()
 
-    fun getAllFavorited() : LiveData<List<MovieEntity>> = mMovieDao.getFavoritedMovie()
+    fun getAllFavorited() : DataSource.Factory<Int, MovieEntity> = mMovieDao.getFavoritedMovie()
 
     fun insertMovies(movies : List<MovieEntity>) = mMovieDao.insertMovies(movies)
 

@@ -42,7 +42,7 @@ class DetailMovieActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         supportActionBar?.title = "Detail Movie/Series"
 
         val factory = ViewModelFactory.getInstance(this)

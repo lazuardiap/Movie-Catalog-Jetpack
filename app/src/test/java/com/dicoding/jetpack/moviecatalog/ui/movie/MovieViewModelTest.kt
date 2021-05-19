@@ -3,6 +3,7 @@ package com.dicoding.jetpack.moviecatalog.ui.movie
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
+import androidx.paging.PagedList
 import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.data.source.MovieRepository
 import com.dicoding.jetpack.moviecatalog.utils.DataDummy
@@ -29,7 +30,10 @@ class MovieViewModelTest{
     private lateinit var movieRepository: MovieRepository
 
     @Mock
-    private lateinit var observer: Observer<Resource<List<MovieEntity>>>
+    private lateinit var observer: Observer<Resource<PagedList<MovieEntity>>>
+
+    @Mock
+    private lateinit var pagedList: PagedList<MovieEntity>
 
     @Before
     fun setup(){
@@ -38,15 +42,16 @@ class MovieViewModelTest{
 
     @Test
     fun getMovies(){
-        val dummyMovies = Resource.success(DataDummy.generateDummyMovies())
-        val movies = MutableLiveData<Resource<List<MovieEntity>>>()
+        val dummyMovies = Resource.success(pagedList)
+        `when`(dummyMovies.data?.size).thenReturn(5)
+        val movies = MutableLiveData<Resource<PagedList<MovieEntity>>>()
         movies.value = dummyMovies
 
         `when`(movieRepository.getAllMovies()).thenReturn(movies)
         val movieEntities = viewModel.getMovies().value?.data
         verify(movieRepository).getAllMovies()
         assertNotNull(movieEntities)
-        assertEquals(10, movieEntities?.size)
+        assertEquals(5, movieEntities?.size)
 
         viewModel.getMovies().observeForever(observer)
         verify(observer).onChanged(dummyMovies)

@@ -3,6 +3,7 @@ package com.dicoding.jetpack.moviecatalog.ui.tvseries
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
+import androidx.paging.PagedList
 import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.data.source.MovieRepository
 import com.dicoding.jetpack.moviecatalog.utils.DataDummy
@@ -28,7 +29,10 @@ class SeriesViewModelTest{
     private lateinit var movieRepository: MovieRepository
 
     @Mock
-    private lateinit var observer: Observer<Resource<List<MovieEntity>>>
+    private lateinit var observer: Observer<Resource<PagedList<MovieEntity>>>
+
+    @Mock
+    private lateinit var pagedList: PagedList<MovieEntity>
 
     @Before
     fun setup(){
@@ -37,15 +41,16 @@ class SeriesViewModelTest{
 
     @Test
     fun getSeries(){
-        val dummySeries = Resource.success(DataDummy.generateDummySeries())
-        val series = MutableLiveData<Resource<List<MovieEntity>>>()
+        val dummySeries = Resource.success(pagedList)
+        Mockito.`when`(dummySeries.data?.size).thenReturn(5)
+        val series = MutableLiveData<Resource<PagedList<MovieEntity>>>()
         series.value = dummySeries
 
         Mockito.`when`(movieRepository.getAllSeries()).thenReturn(series)
         val seriesEntities = viewModel.getSeries().value?.data
         Mockito.verify<MovieRepository>(movieRepository).getAllSeries()
         assertNotNull(seriesEntities)
-        assertEquals(10, seriesEntities?.size)
+        assertEquals(5, seriesEntities?.size)
 
         viewModel.getSeries().observeForever(observer)
         verify(observer).onChanged(dummySeries)

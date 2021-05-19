@@ -2,6 +2,8 @@ package com.dicoding.jetpack.moviecatalog.data.source
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.paging.LivePagedListBuilder
+import androidx.paging.PagedList
 import com.dicoding.jetpack.moviecatalog.data.source.local.LocalDataSource
 import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.data.source.remote.ApiResponse
@@ -17,12 +19,19 @@ class FakeMovieRepository constructor(
 ): MovieDataSource {
 
 
-    override fun getAllMovies(): LiveData<Resource<List<MovieEntity>>> {
-        return object : NetworkBoundResource<List<MovieEntity>, List<MovieResponse>>(appExecutors){
+    override fun getAllMovies(): LiveData<Resource<PagedList<MovieEntity>>> {
+        return object : NetworkBoundResource<PagedList<MovieEntity>, List<MovieResponse>>(appExecutors){
 
-            override fun loadFromDB(): LiveData<List<MovieEntity>> = localDataSource.getAllMovies()
+            override fun loadFromDB(): LiveData<PagedList<MovieEntity>> {
+                val config = PagedList.Config.Builder()
+                    .setEnablePlaceholders(false)
+                    .setInitialLoadSizeHint(5)
+                    .setPageSize(5)
+                    .build()
+                return LivePagedListBuilder(localDataSource.getAllMovies(), config).build()
+            }
 
-            override fun shouldFetch(data: List<MovieEntity>?): Boolean = data == null || data.isEmpty()
+            override fun shouldFetch(data: PagedList<MovieEntity>?): Boolean = data == null || data.isEmpty()
 
             override fun createCall(): LiveData<ApiResponse<List<MovieResponse>>> = remoteDataSource.getAllMovies()
 
@@ -48,12 +57,19 @@ class FakeMovieRepository constructor(
         }.asLiveData()
     }
 
-    override fun getAllSeries(): LiveData<Resource<List<MovieEntity>>> {
-        return object : NetworkBoundResource<List<MovieEntity>, List<MovieResponse>>(appExecutors){
+    override fun getAllSeries(): LiveData<Resource<PagedList<MovieEntity>>> {
+        return object : NetworkBoundResource<PagedList<MovieEntity>, List<MovieResponse>>(appExecutors){
 
-            override fun loadFromDB(): LiveData<List<MovieEntity>> = localDataSource.getAllSeries()
+            override fun loadFromDB(): LiveData<PagedList<MovieEntity>> {
+                val config = PagedList.Config.Builder()
+                    .setEnablePlaceholders(false)
+                    .setInitialLoadSizeHint(5)
+                    .setPageSize(5)
+                    .build()
+                return LivePagedListBuilder(localDataSource.getAllSeries(), config).build()
+            }
 
-            override fun shouldFetch(data: List<MovieEntity>?): Boolean = data == null || data.isEmpty()
+            override fun shouldFetch(data: PagedList<MovieEntity>?): Boolean = data == null || data.isEmpty()
 
             override fun createCall(): LiveData<ApiResponse<List<MovieResponse>>> = remoteDataSource.getAllSeries()
 
@@ -120,11 +136,20 @@ class FakeMovieRepository constructor(
         }.asLiveData()
     }
 
-    override fun getFavoritedMovies(): LiveData<List<MovieEntity>> = localDataSource.getAllFavorited()
+    override fun getFavoritedMovies(): LiveData<PagedList<MovieEntity>> {
+        val config = PagedList.Config.Builder()
+            .setEnablePlaceholders(false)
+            .setInitialLoadSizeHint(5)
+            .setPageSize(5)
+            .build()
+
+        return LivePagedListBuilder(localDataSource.getAllFavorited(), config).build()
+    }
 
     override fun setMovieFavorite(movie: MovieEntity, state: Boolean) = appExecutors.diskIO().execute{
         localDataSource.setMovieFavorited(movie, state)
     }
+
 
 
 }

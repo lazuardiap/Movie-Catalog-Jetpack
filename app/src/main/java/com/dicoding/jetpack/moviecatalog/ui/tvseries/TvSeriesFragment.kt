@@ -41,8 +41,7 @@ class TvSeriesFragment : Fragment() {
 
                         Status.SUCCESS -> {
                             binding.progressBar.visibility = View.GONE
-                            seriesAdapter.setSeries(series.data)
-                            seriesAdapter.notifyDataSetChanged()
+                            seriesAdapter.submitList(series.data)
                         }
 
                         Status.ERROR -> {

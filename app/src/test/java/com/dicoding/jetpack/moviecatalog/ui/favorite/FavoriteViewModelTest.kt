@@ -3,6 +3,7 @@ package com.dicoding.jetpack.moviecatalog.ui.favorite
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
+import androidx.paging.PagedList
 import com.dicoding.jetpack.moviecatalog.data.source.MovieRepository
 import com.dicoding.jetpack.moviecatalog.data.source.local.MovieEntity
 import com.dicoding.jetpack.moviecatalog.utils.DataDummy
@@ -29,7 +30,10 @@ class FavoriteViewModelTest {
     private lateinit var movieRepository: MovieRepository
 
     @Mock
-    private lateinit var observer : Observer<List<MovieEntity>>
+    private lateinit var observer : Observer<PagedList<MovieEntity>>
+
+    @Mock
+    private lateinit var pagedList: PagedList<MovieEntity>
 
     @Before
     fun setUp(){
@@ -38,15 +42,16 @@ class FavoriteViewModelTest {
 
     @Test
     fun getFavorite() {
-        val dummyMovies = DataDummy.generateDummyMovies()
-        val movies = MutableLiveData<List<MovieEntity>>()
+        val dummyMovies = pagedList
+        `when`(dummyMovies.size).thenReturn(5)
+        val movies = MutableLiveData<PagedList<MovieEntity>>()
         movies.value = dummyMovies
 
         `when`(movieRepository.getFavoritedMovies()).thenReturn(movies)
         val movieEntites = viewModel.getFavorite().value
         verify(movieRepository).getFavoritedMovies()
         assertNotNull(movieEntites)
-        assertEquals(10, movieEntites?.size)
+        assertEquals(5, movieEntites?.size)
 
         viewModel.getFavorite().observeForever(observer)
         verify(observer).onChanged(dummyMovies)
